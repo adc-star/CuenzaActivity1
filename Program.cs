@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 
 class Program
 {
-    static int Add(int a, int b, int c, int d)
+    static int Add(int a, int b, int c)
     {
-        return a + b + c + d;
+        return a + b + c;
     }
 
     static void Main()
@@ -18,10 +18,7 @@ class Program
         Console.Write("Enter third number: ");
         int num3 = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Enter fourth number: ");
-        int num4 = Convert.ToInt32(Console.ReadLine());
-
-        int result = Add(num1, num2, num3, num4);
+        int result = Add(num1, num2, num3);
         Console.WriteLine("Total: " + result);
     }
 }
